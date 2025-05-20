@@ -1,0 +1,52 @@
+/* Сброс отступов и размеров */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* черный фон */
+}
+
+/* Центрированный контейнер с контентом */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(26, 26, 26, 0.7); /* полупрозрачный фон */
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для поднятия и тени */
+}
+
+/* Эффект при наведении на контейнер */
+.container:hover {
+  transform: translateY(-10px); /* Поднимаем контейнер вверх */
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5); /* Белая тень */
+}
+
+/* Стили для кнопок */
+.styled-button {
+  background-color: #4CAF50; /* Зеленый фон */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и поднятия */
+}
+
+/* Эффект при наведении на кнопки */
+.styled-button:hover {
+  background-color: #45a049; /* Более темный зеленый при наведении */
+  transform: translateY(-3px); /* Поднимаем кнопку вверх */
+}
