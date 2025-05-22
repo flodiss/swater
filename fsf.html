@@ -62,6 +62,11 @@
       color: #fff;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
+    .unavailable {
+      color: red; /* Красный цвет */
+      font-weight: bold; /* Жирный шрифт */
+      margin-left: 10px; /* Отступ слева */
+    }
 
     @keyframes shine {
       0% {
@@ -79,7 +84,10 @@
   </header>
 
   <div class="content">
-    <button onclick="window.location.href='https://www.donationalerts.com/r/jenyabepxobhi'">Оплата картой</button>
+    <button onclick="window.location.href='https://www.donationalerts.com/r/jenyabepxobhi'">
+      Оплата картой 
+      <span class="unavailable">(недоступен)</span>
+    </button>
     <button onclick="window.location.href='https://t.me/send?start=IVlmBxLLKZNn'">Оплата криптовалютой</button>
   </div>
 </body>
